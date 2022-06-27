@@ -4,7 +4,7 @@
 GETFLUENCE-TEST est une application qui permet de programmer des appels.
 Pour cela nous devons nous s'inscire et s'identifier  pour accèder à celle ci.
 Demo : https://getfluence-test.cleverapps.io/auth/signup
-
+Temps passé : 2 Week end soit 4 jours.
 ---
 L'application regroupe 3 themes principaux : 
 * L'authentification
