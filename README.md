@@ -216,14 +216,14 @@ ProgramControllers.post("/create",authenticate , async (req, res) => {
 
 Pour ce qui est de l'application React j'ai utilisé `create-react-app` pour la développer avec le template de `--typescript`
 
-##### Authentification
+#### Authentification
 J'utilise ici pour la partie authentification ***firebase***
 
 * Très facile pour générer un jwt pour une utilisation lié à un serveur custom
 * Possède differentes fonctions qui permettent de savoir rapidement l'état de l'authentification
 * Une gestion de la persistence de la connection
 
-###### Global state
+#### Global state
 Pour la gestion du state global j'utilise ici ***redux/toolkit*** couplé avec ***RTK QUERY***, une bombe! ceci dit en passant
 
 * ***redux/toolkit*** propose un nouveau système de gestion de réducer via la création de slices et embarque la plupart des middlewares phares de l'époque "redux vanille"
@@ -282,7 +282,7 @@ export const {useCreateProgramMutation,useGetProgramsQuery} = programApi;
 
 ```
 
-###### Route
+#### Route
 
 Pour la gestion des routes ici j'utilise ***react-router-dom v6***
 
@@ -290,7 +290,7 @@ Pour la gestion des routes ici j'utilise ***react-router-dom v6***
 * Possède un systeme de contexte natif pour la gestion d'un layout nested.
 * Possède des hooks
 
-###### Css/Sass
+#### Css/Sass
 
 Pour le css j'utilise le préprocesseur sass que je couple avec le système de module css
 Ce qui permet d'avoir un fichier styles avec sa gestion des classes propre au composant.
@@ -341,7 +341,7 @@ Utilisation dans le module scss
     
 ```
 
-###### Animation
+#### Animation
 
 J'utilise principalement ***React-spring*** pour gérer les animations css
 
@@ -349,7 +349,7 @@ J'utilise principalement ***React-spring*** pour gérer les animations css
 * Très puissant
 * Ce marie bien avec la gestion de variables css inherante au sein d'un composant vu précédemment.
 
-##### Gestion des dates
+#### Gestion des dates
 
 J'utilise ***dayjs*** dans ce projet
 
@@ -360,7 +360,7 @@ J'utilise ***dayjs*** dans ce projet
 Une librairie très légère qui permet d'aidé sur la gestion des dates au sein d'un datepicker
 
 
-###### DatePicker
+#### DatePicker
 
 Le Date Picker est composé de 5 composants principalement;
 
