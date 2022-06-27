@@ -1,4 +1,4 @@
-#GETFLUENCE-TEST
+GETFLUENCE-TEST
 ---
 
 GETFLUENCE-TEST est une application qui permet de programmer des appels.
@@ -12,7 +12,7 @@ L'application regroupe 3 themes principaux :
 * La création d'un composant DatePicker
 ---
 
-###Techno
+######Techno
 
 * Express.js (serveur).
 * React(client).
