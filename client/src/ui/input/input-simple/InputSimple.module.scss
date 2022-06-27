@@ -1,0 +1,16 @@
+.input-simple-wrapper{
+    label{
+        display: block;
+        text-transform: uppercase;
+        color:var(--secondary-lighter);
+        font-size:0.8rem
+    }
+    input{
+        margin-top: 0.4rem;
+        padding:0.8rem;
+        outline: none !important;
+        border-radius: 0.3rem;
+        border:1px solid var(--focus-color);
+        box-sizing: border-box;
+    } 
+}

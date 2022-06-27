@@ -1,0 +1,37 @@
+.time-picker{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    max-height:20rem;
+    overflow-y:scroll;
+    max-width: 10rem;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding:0 1rem;
+    box-sizing: border-box;
+    gap:1rem;
+    @media screen and (max-width:760px) {
+      height: 5rem;
+      max-width: 100%;
+      flex-direction: row;
+      margin-left: 0rem;
+      margin-bottom: 1rem;
+      padding:1rem;
+    }
+    &::-webkit-scrollbar{
+        width: 0.4rem;
+        @media screen and (max-width:760px) {
+          height: 0.4rem;
+        }
+    }
+    &::-webkit-scrollbar-track {
+       
+        border-radius: 10px;
+      }
+    &::-webkit-scrollbar-thumb {
+        background: var(--inactif-color); 
+        border-radius: 1rem;
+      }
+
+
+}

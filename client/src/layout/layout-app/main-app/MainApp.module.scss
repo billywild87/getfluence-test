@@ -1,0 +1,9 @@
+.main-app-container{
+    grid-area: main;
+    background-color: rgb(247, 247, 247);
+    padding:2rem 2rem 0rem 2rem;
+    box-sizing: border-box;
+    @media screen and (max-width:768px) {
+        overflow: auto;
+    }
+}

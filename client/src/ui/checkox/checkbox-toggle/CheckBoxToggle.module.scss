@@ -1,0 +1,84 @@
+
+$toggle-indicator-size: 20px; // changing this number will resize the whole toggle
+$track-height: $toggle-indicator-size + 6;
+$track-width: $toggle-indicator-size * 2.5;
+$highContrastModeSupport: solid 2px transparent;
+
+//support-variable
+
+$speed: 0.25s;
+
+
+$focus-ring: 0px 0px 0px 2px var(--primary-color);
+.toggle{
+    align-items: center;
+    border-radius: 100px;
+    display: flex;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    &:last-of-type{
+        margin:0
+    }
+}
+
+
+.input-toggle{
+   
+    display: none;
+
+    &:disabled + .toggle-track {
+		cursor: not-allowed;
+		opacity: 0.7;
+	    }
+    }
+    .toggle-track {
+       
+        background: transparent;
+        border: 2px solid var(--inactif-color);
+        border-radius: 100px;
+        cursor: pointer;
+        display: flex;
+        height: $track-height;
+        margin-right: 12px;
+        position: relative;
+        width: $track-width;
+    }
+
+    .toggle-indicator {
+        align-items: center;
+        background:  var(--inactif-color);
+        border-radius: 50%;
+        bottom: 3px;
+        display: flex;
+        height: $toggle-indicator-size;
+        justify-content: center;
+        left: 2px;
+        outline: $highContrastModeSupport;
+        position: absolute;
+        transition: $speed;
+        width: $toggle-indicator-size;
+    }
+
+
+    .checkMark {
+        fill: #fff;
+        height: $toggle-indicator-size - 4;
+        width: $toggle-indicator-size - 4;
+        opacity: 0;
+        transition: opacity $speed ease-in-out;
+    }
+
+    .input-toggle:checked + .toggle-track{
+        border: 2px solid var(--primary-color);
+       
+    }
+    .input-toggle:checked + .toggle-track .toggle-indicator {
+        background: var(--primary-color);
+      
+        transform: translateX($track-width - calc($track-width / 2) + 1);
+    
+        .checkMark {
+            opacity: 1;
+            transition: opacity $speed ease-in-out;
+        }
+    }

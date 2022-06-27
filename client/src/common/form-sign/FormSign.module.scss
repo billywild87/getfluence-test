@@ -1,0 +1,45 @@
+.form-sign-container{
+    width:20rem;
+    margin: auto; 
+}
+
+
+.logo-sign{
+    width:10rem;
+    margin:0 auto;
+    display: block;
+    img{
+        width:10rem;
+        margin:0 auto;
+        display: block;
+    }
+
+ 
+}
+
+.title-sign{
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+        color:var(--text-color);
+    } 
+
+    .sign-sentence{
+        margin-top: -1rem;
+        color: var(--sub-text-color);
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+
+.forms-container{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    margin-top: 2rem;
+    .input-form{
+        margin-top: 1rem;
+    }
+}
+

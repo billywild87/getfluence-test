@@ -1,0 +1,28 @@
+.remember-container{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    .remember-entitled{
+       color:var(--remember-color); 
+       font-weight: 600;
+    }
+  }
+
+
+  .action-login-form{
+      display: flex;
+      flex-direction: column;
+      gap:1rem;
+      align-items: center;
+      & > button{
+          flex:1 1;
+          width:100%;
+      }
+
+      .action-separate-text{
+          text-transform: uppercase;
+      }
+  }

@@ -1,0 +1,30 @@
+.header-app-container{
+    grid-area: header;
+    background:var(--secondary-color);
+    position:sticky;
+    top:0rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    
+    .logo{
+        display: none;
+    }
+
+    @media screen and (max-width:768px) {
+        background-color: var(--primary-color);
+        .logo{
+      
+            display: block;
+            img{
+            margin:0 auto;
+            display: block;
+            filter: brightness(200%);
+            height: 2rem;
+            
+            }
+        }
+    }
+}

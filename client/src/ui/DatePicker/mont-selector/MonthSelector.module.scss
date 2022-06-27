@@ -1,0 +1,33 @@
+ .month-selector-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+ }
+ .dateView{
+    flex:1;
+    font-weight: 600;
+    color:var(--secondary-color);
+    text-transform: capitalize;
+    margin-left: 1rem;
+ }
+
+ .action-month{
+   padding-right: 1rem;
+   display: flex;
+   align-items: center;
+   gap:1rem;
+   .button-back{
+    cursor: pointer;
+    background:none;
+    border: none;
+    outline: none !important;
+    padding:0;
+    svg{
+        width:1rem;
+        fill:black;
+    }
+ }
+
+}

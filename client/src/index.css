@@ -1,0 +1,30 @@
+#root{
+  height: 100%;
+    width: 100%;
+}
+body {
+  margin: 0;
+  font-family:'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+ 
+}
+
+@media  screen and (max-width:768px) {
+  body{
+    overflow: hidden;
+  }
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+
+/* Hide scrollbar for IE, Edge and Firefox */

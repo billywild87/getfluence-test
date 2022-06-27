@@ -1,0 +1,17 @@
+.item-menu-mobile{
+    flex:1;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: var(--container-item-color);
+    border:0;
+    outline: none !important;
+    color:var(--text-item-color);
+    cursor: pointer;
+    svg{
+        width:1.5rem;
+        height:1.5rem;
+        fill:var(--text-item-color);
+    }
+}

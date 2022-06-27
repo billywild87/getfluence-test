@@ -1,0 +1,40 @@
+.select-simple-container{
+  
+    label{
+        display: block;
+        text-transform: uppercase;
+        color:var(--secondary-lighter);
+        font-size:0.8rem
+        
+    }
+    .select-simple-box{
+     
+        display: block;
+      
+        border:1px solid var(--focus-color);
+        margin-top: 0.3rem;
+        outline: none !important;
+        border-radius: 0.3rem;
+        position: relative;
+
+        overflow: hidden;
+        
+        select{
+            box-sizing: border-box;
+            padding:0.8rem;
+            width:0%;
+            min-width:100%;
+            cursor: pointer;
+            border: 0;
+            position: relative;
+            z-index: 99;
+            background: none;
+            border:0;
+            outline: none !important;
+            
+            
+
+         
+        }
+    }
+}

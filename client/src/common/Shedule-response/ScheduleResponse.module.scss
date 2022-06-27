@@ -1,0 +1,211 @@
+@use '../../styles/variable.scss';
+.schedule-response-container{
+    background-color: white;
+    max-width: 45rem;
+    border-radius: 0.4rem;
+    padding:2rem 1rem;
+    box-sizing: border-box; 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    @media screen and (max-width:1000px) {
+        max-width: calc(100vw - #{variable.$menu-width} - 5rem);
+    }
+    @media screen and (max-width:760px) {
+        max-width: calc(100vw);
+        height: calc(100vh);
+        overflow: auto;
+        text-align: center;
+        padding:0rem 1rem 1rem 1rem;
+    }
+
+    h3{
+        
+        font-weight: 300;
+        margin-left: 2rem;
+        display: block;
+        color:var(--text-color);
+        
+        @media screen and (max-width:760px) {
+            margin-left: 0px;
+            padding:1rem 0rem;
+            font-weight: 600;
+            background-color: var(--primary-color);
+        }
+    }
+}
+
+.schedule-response-wrapper{
+    margin-top: 2rem;
+    display:flex;
+    @media screen and (max-width:760px) {
+        flex-direction: column;
+
+      
+    }
+}
+
+
+.time-selector{
+
+}
+
+.left-side-schedule{
+    flex:1;
+}
+
+
+
+.date-overview{
+    margin-bottom: 1rem;
+    padding:0rem 2rem;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    @media screen and (max-width:760px) {
+        display: none;
+    }
+    .label-date{
+        color:var(--sub-text-color);
+        font-size: 0.9rem;
+        
+    }
+    .view-date{
+        border-radius: 0.3rem;
+        padding:0.5rem 0.5rem;
+        max-width:8rem;
+        background-color:rgba(240,240,240,1);
+        border:none;
+        outline: none !important;
+        text-align: center;
+        font-size: 1rem;
+        
+    }
+}
+
+.date-picker{
+    margin-top: 1rem;
+    
+}
+
+.time-selector{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width:760px) {
+        align-items: flex-start;
+        justify-content: flex-start;
+        
+    }
+
+    
+    
+}
+
+.time-overview{
+    margin-bottom: 1rem;
+    padding:0rem 2rem;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    .label-date{
+        color:var(--sub-text-color);
+        font-size: 0.9rem;
+        
+    } 
+
+    @media screen and (max-width:760px) {
+        display: none;
+    }
+}
+
+.date-choose-overview-mobile{
+    display: none;
+    @media screen and (max-width:760px) {
+        display: block;
+        margin:0 auto;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        span{
+            background-color: rgb(246,246,246);
+            padding:1rem;
+            box-sizing: border-box;
+            border-radius: 0.4rem
+        }
+    }
+}
+
+
+.view-time{
+    border-radius: 0.3rem;
+    padding:0.5rem 0.5rem;
+    max-width:8rem;
+    background-color:rgba(240,240,240,1);
+    border:none;
+    outline: none !important;
+    text-align: center;
+    font-size: 1rem;
+    border:1px solid var(--secondary-color);
+
+ 
+
+}
+
+.sentence-hour-mobile{
+    display: none;
+    text-align: center;
+    width:100%;
+    font-weight: 600;
+    @media screen and (max-width:768px) {
+        display: block;
+    
+    }
+}
+
+.hour-picker{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    max-height:20rem;
+    overflow-y:scroll;
+    max-width: 10rem;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    &::-webkit-scrollbar{
+        width: 0.4rem;
+    }
+    &::-webkit-scrollbar-track {
+       
+        border-radius: 10px;
+      }
+    &::-webkit-scrollbar-thumb {
+        background: var(--inactif-color); 
+        border-radius: 1rem;
+      }
+
+    .hour-cell{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding:0.5rem 0rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.4rem;
+        font-size: 0.9rem;
+        &:hover{
+            background-color:rgb(240,240,240);
+            
+        }
+    }
+
+}
+
+.action-schedule{
+    display: flex;
+    gap:1rem;
+    @media screen and (max-width:768px) {
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+       justify-content: center;
+    }
+}

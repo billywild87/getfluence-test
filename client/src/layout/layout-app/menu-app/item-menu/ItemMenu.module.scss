@@ -1,0 +1,16 @@
+.item-menu{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+    box-sizing: border-box;
+    padding:0.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-weight: 600;
+    color:var(--text-item-color);
+    background-color: var(--container-item-color);
+    svg{
+        fill:var(--text-item-color);
+        width:1.1rem
+    }
+}

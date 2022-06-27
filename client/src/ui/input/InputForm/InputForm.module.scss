@@ -1,0 +1,44 @@
+.input-form-wrapper{
+    label{
+        color:var(--text-color);
+        font-weight:600
+    }
+    
+}
+
+.input-form-container{
+    margin-top: 0.3rem;
+    border:2px solid var(--color-input);
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    padding:0.8rem;
+    gap:1rem;
+    border-radius: 1.5rem;
+    input{
+        font-size: 1rem;
+        border:0;
+        width:0;
+        max-width: 100%;
+        outline: none !important;
+        flex:1;
+        color:var(--text-color);
+      
+        &::placeholder{
+            color:var(--placeholder-color)
+        }
+
+
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+    svg{
+        width:1.2rem;
+        height: 1.2rem;
+        fill:var(--color-input)
+    }
+}

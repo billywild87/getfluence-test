@@ -1,0 +1,32 @@
+.sign-valid-page{
+    width:20rem;
+    margin: auto; 
+
+    .sign-valid-logo{
+        img{
+        width:10rem;
+        display:block;
+        margin:0 auto;
+        }
+    }
+
+    .sign-valid-title{
+        color:var(--text-color);
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 800;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .sign-valid-sentence{
+        color:var(--secondary-lighter);
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .sign-valid-action{
+        margin-top: 2rem;
+        text-align: center;
+    }
+}

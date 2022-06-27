@@ -1,0 +1,22 @@
+@use '../../styles/variable.scss' as v;
+.layout-container{
+    display: grid;
+    min-height: 100vh;
+
+    grid-template-columns: v.$menu-width minmax(0,1fr);
+    grid-template-rows: v.$header-height 1fr;
+    
+    grid-template-areas:
+    "menu header"
+    "menu main";
+
+    @media screen and (max-width:768px) {
+        grid-template-columns:  minmax(0,1fr);
+        grid-template-rows: 4rem  calc(100vh - #{v.$header-height} - 3rem) 3rem  ;
+        grid-template-areas:
+        "header"
+        "main"
+        
+    }
+}
+

@@ -1,0 +1,35 @@
+.form-signin{
+    margin:auto;
+    width:20rem;
+}
+.logo-form{
+    img{
+    display: block;
+    width:10rem;
+    margin:0 auto;
+    
+    }
+}
+
+.signin-form-title{
+    text-align: center;
+    text-transform: uppercase;
+    color:var(--text-color);
+    
+}
+
+.signin-form-sentence{
+    margin-top: -1rem;
+    color: var(--sub-text-color);
+    text-align: center;
+}
+
+.forms-container{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    margin-top: 2rem;
+    .input-form{
+        margin-top: 0rem;
+    }
+}

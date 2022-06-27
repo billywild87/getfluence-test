@@ -1,0 +1,15 @@
+.menu-app-mobile-container{
+    width:100vw;
+    height:4rem;
+    background-color: var(--secondary-color);
+    position: sticky;
+    bottom:0rem;
+    display: none;
+
+
+    @media screen and (max-width:768px) {
+        display: flex;
+    }
+
+
+}

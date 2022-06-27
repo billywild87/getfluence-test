@@ -1,0 +1,11 @@
+.button-form{
+    cursor: pointer;
+    border-radius: 1.5rem;
+    padding:1rem 1rem;
+    border:0;
+    outline: none !important;
+    color:white;
+    background: var(--button-form-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}

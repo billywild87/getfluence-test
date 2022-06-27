@@ -1,0 +1,18 @@
+.cell-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding:0.5rem 0rem;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+    background-color: var(--cell-color);
+    color:var(--cell-text-color);
+    pointer-events: var(--is-clickable);
+    @media screen and (max-width:768px) {
+        padding:0.5rem 0.5rem
+    }
+}

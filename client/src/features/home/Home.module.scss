@@ -1,0 +1,33 @@
+.home-container{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-home{
+    
+    border-radius: 0.4rem;
+    
+    height: 10rem;
+    width:50rem;
+    text-transform: uppercase;
+    display: flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    gap:2rem;
+    .logo-home{
+        img{
+            
+            width:20rem;
+            display: block;
+        }
+    }
+
+    .sentence-home{
+        color:var(--text-color)
+    }
+}

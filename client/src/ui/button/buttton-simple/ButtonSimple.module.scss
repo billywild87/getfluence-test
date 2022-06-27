@@ -1,0 +1,11 @@
+.button-simple{
+    background:var(--background-button-simple) ;
+    border:0;
+    outline: none !important;
+    padding:0.8rem;
+    color:var(--text-button-simple);
+    cursor: pointer;
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
