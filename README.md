@@ -216,7 +216,7 @@ ProgramControllers.post("/create",authenticate , async (req, res) => {
 
 Pour ce qui est de l'application React j'ai utilisé `create-react-app` pour la développer avec le template de `--typescript`
 
-###### #Authentification
+##### Authentification
 J'utilise ici pour la partie authentification ***firebase***
 
 * Très facile pour générer un jwt pour une utilisation lié à un serveur custom
@@ -349,7 +349,7 @@ J'utilise principalement ***React-spring*** pour gérer les animations css
 * Très puissant
 * Ce marie bien avec la gestion de variables css inherante au sein d'un composant vu précédemment.
 
-#####Gestion des dates
+##### Gestion des dates
 
 J'utilise ***dayjs*** dans ce projet
 
