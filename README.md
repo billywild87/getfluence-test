@@ -1,4 +1,4 @@
-GETFLUENCE-TEST
+# GETFLUENCE-TEST
 ---
 
 GETFLUENCE-TEST est une application qui permet de programmer des appels.
@@ -12,14 +12,14 @@ L'application regroupe 3 themes principaux :
 * La création d'un composant DatePicker
 ---
 
-######Techno
+## Techno
 
 * Express.js (serveur).
 * React(client).
 * Firebase pour la gestion de l'auhtentification.
 * PostgreSQL pour la persitance des données
 ---
-###Installation
+## Installation
 
 
 * Dans un premier temps verifier les version de node. il nous faudra node@16
@@ -32,7 +32,7 @@ L'application regroupe 3 themes principaux :
 * Creer vous une application web Firebase avec authentification par email/password via  https://firebase.google.com/
 
 ---
-###Configuration de vos variables d'environnement
+## Configuration de vos variables d'environnement
 
 * Dans le root project `/`  créer un fichier `.env`
 * Dans le `cd/client` faite créer un ficher `.env.local`
@@ -77,7 +77,7 @@ REACT_APP_FIREBASE_MEASUREMENT_ID=********
 REACT_APP_BASE_API='/api/'
 ```
 ---
-###Configuration de la base de donnée
+## Configuration de la base de donnée
 
 Créer deux tables : USERS ET PROGRAM
 
@@ -113,7 +113,7 @@ CREATE TABLE IF NOT EXISTS public.program
 
 ```
 ---
-###Démarrer l'application
+## Démarrer l'application
 
 Vous avez deux choix soit lancez l'application
 
@@ -132,7 +132,7 @@ Vous avez deux choix soit lancez l'application
 Sinon utilisez le lien démonstration ici : https://getfluence-test.cleverapps.io/
 
 ---
-###Composition du server express
+## Composition du server express
 
 * Point d'entrée : `index.js`
 * config db dans db.js
@@ -212,18 +212,18 @@ ProgramControllers.post("/create",authenticate , async (req, res) => {
 })
 ```
 ---
-###Composition de l'application React
+## Composition de l'application React
 
 Pour ce qui est de l'application React j'ai utilisé `create-react-app` pour la développer avec le template de `--typescript`
 
-#####Authentification
+###### #Authentification
 J'utilise ici pour la partie authentification ***firebase***
 
 * Très facile pour générer un jwt pour une utilisation lié à un serveur custom
 * Possède differentes fonctions qui permettent de savoir rapidement l'état de l'authentification
 * Une gestion de la persistence de la connection
 
-#####Global state
+###### Global state
 Pour la gestion du state global j'utilise ici ***redux/toolkit*** couplé avec ***RTK QUERY***, une bombe! ceci dit en passant
 
 * ***redux/toolkit*** propose un nouveau système de gestion de réducer via la création de slices et embarque la plupart des middlewares phares de l'époque "redux vanille"
@@ -282,7 +282,7 @@ export const {useCreateProgramMutation,useGetProgramsQuery} = programApi;
 
 ```
 
-#####Route
+###### Route
 
 Pour la gestion des routes ici j'utilise ***react-router-dom v6***
 
@@ -290,7 +290,7 @@ Pour la gestion des routes ici j'utilise ***react-router-dom v6***
 * Possède un systeme de contexte natif pour la gestion d'un layout nested.
 * Possède des hooks
 
-#####Css/Sass
+###### Css/Sass
 
 Pour le css j'utilise le préprocesseur sass que je couple avec le système de module css
 Ce qui permet d'avoir un fichier styles avec sa gestion des classes propre au composant.
@@ -341,7 +341,7 @@ Utilisation dans le module scss
     
 ```
 
-#####Animation
+###### Animation
 
 J'utilise principalement ***React-spring*** pour gérer les animations css
 
@@ -360,7 +360,7 @@ J'utilise ***dayjs*** dans ce projet
 Une librairie très légère qui permet d'aidé sur la gestion des dates au sein d'un datepicker
 
 
-#####DatePicker
+###### DatePicker
 
 Le Date Picker est composé de 5 composants principalement;
 
