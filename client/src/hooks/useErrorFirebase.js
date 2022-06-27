@@ -4,7 +4,7 @@ export function useErrorFirebase(codeError,action){
     const [error,setError] = useState('');
 
     useEffect(()=>{
-        console.log(codeError)
+    
         codeError === ''?
         setError('')
         :codeError === 'auth/missing-email'
