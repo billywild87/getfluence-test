@@ -115,7 +115,7 @@ CREATE TABLE IF NOT EXISTS public.program
 ---
 ## Démarrer l'application
 
-Vous avez deux choix soit lancez l'application
+Vous avez deux choix pour démarrer l'application
 
 * Lancer l'application en mode développement
 * Lancer l'application en mode production
