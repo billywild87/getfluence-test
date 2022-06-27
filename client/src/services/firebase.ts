@@ -6,13 +6,13 @@ import { getFirestore} from "firebase/firestore";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAUMGUIHbzJPdEAPcY4by1v6bgnzaXysJ4",
-  authDomain: "getfluence-app.firebaseapp.com",
-  projectId: "getfluence-app",
-  storageBucket: "getfluence-app.appspot.com",
-  messagingSenderId: "920247322405",
-  appId: "1:920247322405:web:cfe61e97733f92b53e7ccc",
-  measurementId: "G-6MKQFNZ03S"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSENGER_SEND_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
