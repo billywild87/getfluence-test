@@ -19,7 +19,7 @@ function App() {
     <BrowserRouter>
     <AuthProvider>
       <Routes>
-      {/*<Route path='*' element={<Navigate  to="/404"/>}/>*/}
+      <Route path='*' element={<Navigate  to="/404"/>}/>
 
         <Route path='/404' element={<NotFound/>}/>
  
