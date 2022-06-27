@@ -4,7 +4,8 @@
 GETFLUENCE-TEST est une application qui permet de programmer des appels.
 Pour cela nous devons nous s'inscire et s'identifier  pour accèder à celle ci.
 Demo : https://getfluence-test.cleverapps.io/auth/signup
-Temps passé : 2 Week end soit 4 jours.
+*Temps passé : 2 Week end soit 4 jours.
+
 ---
 L'application regroupe 3 themes principaux : 
 * L'authentification
@@ -370,5 +371,3 @@ Le Date Picker est composé de 5 composants principalement;
 * Un composant qui permet de selectionner l'heure et ainsi d'ajouter l'heure au jours selectionner
 * Un bouton qui permet de programmer la date selectionner
 
-
-Auteur :
